@@ -34,9 +34,10 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 16px;
+	background-color: #000;
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -44,16 +45,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
-    color: #4a4a4a;
+    color: #000;
 }
 
 
 .navbar-brand {
 	font-weight: 700;
 }
-
 .navbar-default .navbar-brand {
-	color: #33ccff;
+	color: #fff;
 }
 
 .navbar-default {
@@ -62,17 +62,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #1abc9c;
+	color: #fff;
 	background-color: transparent;
-	border-bottom: 2px solid #1abc9c
+	border-bottom: 2px solid #fff
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: #1abc9c;
+	color: #fff;
 }
 
 #headerwrap {
-	background: url(../img/concert.jpg) no-repeat center top;
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
@@ -92,6 +91,27 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 
+#headerwrap {
+	position: relative;
+
+}
+.content {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 1);
+	color: #fff;
+}
+
+.content  h2 {
+	color: #fff;
+}
+
+.sketch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
 #headerwrap h1 {
 	color: #ffffff;
 	padding-top: 10px;
@@ -109,14 +129,14 @@ h1, h2, h3, h4, h5, h6 {
 #social {
 	padding-top: 35px;
 	padding-bottom: 35px;
-	background-color: #f2f2f2;
+	background-color: #000;
 }
 
 #social i {
 	font-size: 35px;
-	color: #4a4a4a
+	color: #fff;
 }
 
 #social i:hover {
-	color: #000000
+	color: #4a4a4a;
 }
