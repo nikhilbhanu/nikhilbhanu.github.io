@@ -1,0 +1,139 @@
+/* -----------------------------------
+Variables
+-------------------------------------- */
+
+:root {
+    --color-bg: #000000;
+    --color-highlight: #ffffff;
+    --color-default: #BAB6B1;
+    --color-dim: #797673;
+    --font: 'Space Mono', monospace;
+    --font-size: 16px;
+	--font-size-l: 24px;
+    --font-s: 14px;
+    --spacing: 1.5em;
+    --spacing-s: calc(0.5 * var(--spacing));
+    --spacing-m: var(--spacing);
+    --spacing-l: calc(1.5 * var(--spacing));
+    --spacing-xl: calc(2.5 * var(--spacing));
+    --spacing-xxl: calc(5 * var(--spacing));
+    --spacing-col: calc(6 * var(--spacing));
+    --spacing-width-max: 38rem;
+    --spacing-width-tiny: 15rem;
+    --spacing-width-xl: 50rem;
+}
+
+/* -----------------------------------
+Base
+-------------------------------------- */
+
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: var(--font-std);
+    font-family: var(--font);
+    line-height: 1.5;
+    background-color: var(--color-bg);
+    color: var(--color-default);
+    font-family: var(--font);
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "onum" 1, "liga" 1;
+    font-size: var(--font-size);
+    line-height: 1.5;
+    padding: 1.5rem;
+}
+
+body {
+    margin: 3vw 0;
+}
+
+section {
+    margin-bottom: var(--spacing-xl);
+}
+
+/* -----------------------------------
+Header
+-------------------------------------- */
+
+body>header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: var(--spacing-xxl);
+    color: var(--color-dim);
+}
+
+body>header h1 {
+	font-size: var(--font-size-l);
+    margin: 0;
+}
+
+body>header img {
+    display: block;
+    border-radius: 100%;
+    height: calc(5.5 * var(--spacing));
+    width: auto;
+}
+
+body>header a {
+    text-decoration: none;
+}
+
+/* -----------------------------------
+Typography
+-------------------------------------- */
+
+h1, h2, h3 {
+    font-weight: 500;
+    font-size: 1rem;
+    margin: var(--spacing-s) 0;
+    color: var(--color-highlight);
+}
+
+h2 {
+	font-size: var(--font-size-l);
+    margin: var(--spacing-s) 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+a {
+    color: var(--color-default);
+    text-decoration-color: var(--color-dim);
+    text-decoration-thickness: 0.5px;
+    text-underline-offset: 0.05em;
+}
+
+a:hover {
+    transition: color 0.2s ease-in;
+    color: var(--color-highlight);
+}
+
+h3 a {
+    color: var(--color-highlight);
+}
+
+p {
+    font-family: var(--font);
+    font-weight: normal;
+    margin: 1em 0;
+    font-size: var(--font-size);
+    font-feature-settings: 'onum' 1;
+}
+
+/* -----------------------------------
+Limit widths
+-------------------------------------- */
+
+body>header, h1, h2, h3, p
+{
+    max-width: var(--spacing-width-max);
+    margin-left: auto;
+    margin-right: auto;
+}
